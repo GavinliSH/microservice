@@ -40,4 +40,4 @@ management:
       exposure:
         include: bus-refresh
 welcomeservice:
-    test: testbus
+    test: testbus01
