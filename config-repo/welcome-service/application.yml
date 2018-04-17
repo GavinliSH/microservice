@@ -33,4 +33,4 @@ server:
     port: 35001
     
 welcomeservice:
-    test: test001
+    test: admin123
