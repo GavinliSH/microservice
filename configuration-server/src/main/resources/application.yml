@@ -12,9 +12,18 @@ spring:
           username:
           password:
       label: master
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: www.junyee.org
+    port: 5672
+    username: guest
+    password: guest
 logging:
   level:
     ROOT: INFO
     org.junyee.microserivce: DEBUG
     org.springframework.cloud: DEBUG
+
 

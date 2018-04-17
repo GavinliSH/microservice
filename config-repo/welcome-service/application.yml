@@ -12,6 +12,14 @@ spring:
                 health-check-url: http://www.junyee.org:35001/actuator/health
                 healthCheckInterval: 15s
                 instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+        bus:
+            trace:
+                enabled: true
+        rabbitmq:
+            host: www.junyee.org
+            port: 5672
+            username: guest
+            password: guest
     zipkin:
         base-url: http://www.junyee.org:9411/
         service:
