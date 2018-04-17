@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: welcomeservice
+  cloud:
+    config:
+      profile: dev
+      uri: http://microservice.chinacloudapi.cn:8888/
