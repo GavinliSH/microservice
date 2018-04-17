@@ -1,7 +1,7 @@
 spring:
   application:
-    name: welcomeservice
+    name: welcome-service
   cloud:
     config:
       profile: dev
-      uri: http://microservice.chinacloudapi.cn:8888/
+      uri: http://www.junyee.org:8888/

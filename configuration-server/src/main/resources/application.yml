@@ -2,16 +2,16 @@ server:
   port: 8888
 spring:
   application:
-    name: configurationserver
+    name: configuration-server
   cloud:
     config:
       server:
         git:
-          uri:
-          search-paths: /respo/{application}/
-          username: junjun.zhu
-          password: junjun.zhu
-      label: develop
+          uri: https://github.com/o0junyee0o/microservice.git
+          search-paths: /config-repo/{application}/
+          username:
+          password:
+      label: master
 logging:
   level:
     ROOT: INFO
