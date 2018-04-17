@@ -1,24 +1,3 @@
-#server:
-#  port: 8888
-#spring:
-#  application:
-#    name: configurationserver
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: http://127.0.0.1:8088/microservice/configuration-repo.git
-#          search-paths: {application}
-#          username: root
-#          password: Pass2016
-#      label: master
-#logging:
-#  level:
-#    ROOT: DEBUG
-#    org.junyee.microserivce: DEBUG
-#    org.springframework.cloud: DEBUG
-
-
 server:
   port: 8888
 spring:
@@ -28,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://cgcnrepository.chinanorth.cloudapp.chinacloudapi.cn/gitlab/auto-microservice-package/springcloud/configuration-management-repos.git
+          uri:
           search-paths: /respo/{application}/
           username: junjun.zhu
           password: junjun.zhu
@@ -38,3 +17,4 @@ logging:
     ROOT: INFO
     org.junyee.microserivce: DEBUG
     org.springframework.cloud: DEBUG
+
