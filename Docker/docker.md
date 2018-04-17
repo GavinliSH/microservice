@@ -5,6 +5,7 @@
 
 > Java maven project:
 >> mvn clean install -DskipTests dockerfile:build
+<br>
 >> docker run -d -p 35001:35001 -t springcloud/configuration-server
 
 
