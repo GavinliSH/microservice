@@ -1,3 +1,6 @@
+##
+## This is a demo application yaml file
+##
 # www.junyee.org is LAN hostname
 # In docker deamon , if you do not set public dns server, the consul will not find the docker generated hostname. For running success, the request all in LAN layer.
 # if you running in your env. please change the hostname to right.
