@@ -3,3 +3,7 @@
 ##
 docker search zipkin
 docker pull openzipkin/zipkin
+
+## cd the git project zipkin path and run the below command.
+docker-compose up -d
+
