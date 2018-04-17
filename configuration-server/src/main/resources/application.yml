@@ -15,6 +15,22 @@ spring:
     bus:
       trace:
         enabled: true
+    consul:
+        host: www.junyee.org
+        port: 8500
+        discovery:
+          health-check-url: http://www.junyee.org:8888/actuator/health
+          healthCheckInterval: 15s
+          instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+  zipkin:
+    base-url: http://www.junyee.org:9411/
+    service:
+      name: configuration-server
+    locator:
+      discovery:
+        enabled: true
+    sender:
+      type: web
   rabbitmq:
     host: www.junyee.org
     port: 5672
