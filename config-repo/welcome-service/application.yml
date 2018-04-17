@@ -31,6 +31,13 @@ spring:
           type: web
 server:
     port: 35001
-    
+management:
+  endpoint:
+    bus-refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 welcomeservice:
     test: testbus

@@ -15,6 +15,9 @@ spring:
     bus:
       trace:
         enabled: true
+      enabled: true
+      refresh:
+        enabled: true
     consul:
         host: www.junyee.org
         port: 8500
@@ -41,5 +44,14 @@ logging:
     ROOT: INFO
     org.junyee.microserivce: DEBUG
     org.springframework.cloud: DEBUG
+management:
+  endpoint:
+    bus-refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
 
 
