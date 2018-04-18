@@ -39,8 +39,8 @@ management:
     web:
       exposure:
         include: bus-refresh
-applications: turbine-hystrix;welcome-service
+applications: turbine-hystrix,welcome-service
 turbine:
   aggregator:
-    clusterConfig: ${applications}
+    clusterConfig: TURBINE-HYSTRIX,WELCOME-SERVICE
   appConfig: ${applications}
