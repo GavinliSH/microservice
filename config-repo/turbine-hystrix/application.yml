@@ -37,7 +37,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: ["health","info","bus-refresh","hystrix.stream"]
+        include: *
 applications: turbine-hystrix,welcome-service
 turbine:
   aggregator:
