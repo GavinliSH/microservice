@@ -11,7 +11,6 @@ spring:
                 health-check-url: http://www.junyee.org:34001/actuator/health
                 healthCheckInterval: 15s
                 instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
-                management-port: 34002
         bus:
             trace:
                 enabled: true
@@ -38,7 +37,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: ["health","info","bus-refresh"]
+        include: ["health","info","bus-refresh","hystrix.stream"]
 applications: turbine-hystrix,welcome-service
 turbine:
   aggregator:
