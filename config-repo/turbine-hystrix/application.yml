@@ -25,7 +25,7 @@ spring:
     zipkin:
         base-url: http://www.junyee.org:9411/
         service:
-          name: welcome-service
+          name: turbine-hystrix
         locator:
           discovery:
             enabled: true
@@ -41,3 +41,8 @@ management:
     web:
       exposure:
         include: bus-refresh
+applications: turbine-hystrix;welcome-service
+turbine:
+  aggregator:
+    clusterConfig: ${applications}
+  appConfig: ${applications}
