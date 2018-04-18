@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
 @EnableConfigServer
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 public class ConfigurationServerApplication {
 	Logger logger = LoggerFactory.getLogger(ConfigurationServerApplication.class);
 	public static void main(String[] args) {

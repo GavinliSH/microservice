@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: turbine-hystrix
+  cloud:
+    config:
+      profile: dev
+      uri: http://www.junyee.org:8888/
