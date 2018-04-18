@@ -38,7 +38,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: ["health","info","bus-refresh"]
+        include: ["*"]
 welcomeservice:
     test: testbus02
 hystrix:
