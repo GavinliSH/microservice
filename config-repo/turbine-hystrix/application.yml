@@ -42,5 +42,5 @@ management:
 applications: turbine-hystrix,welcome-service
 turbine:
   aggregator:
-    clusterConfig: TURBINE-HYSTRIX,WELCOME-SERVICE
+    clusterConfig: turbine-hystrix,welcome-service
   appConfig: ${applications}
