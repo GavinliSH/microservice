@@ -4,3 +4,4 @@
 * Provide consul registration server
 * Provide zipkin trace tool
 * Provide real-time refresh configuration files
+* Provide turbine hystrix
