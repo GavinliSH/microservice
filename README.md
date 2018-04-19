@@ -5,3 +5,4 @@
 * Provide zipkin trace tool
 * Provide real-time refresh configuration files
 * Provide turbine hystrix
+* Provide Zuul API gateway
