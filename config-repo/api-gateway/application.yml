@@ -57,5 +57,5 @@ zuul:
       serviceId: turbine-hystrix
       stripPrefix: true
     githup:
-      path: /githup/**
-      url: http://githup.com
+      path: /baidu/**
+      url: http://www.baidu.com
