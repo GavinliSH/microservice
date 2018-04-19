@@ -60,3 +60,9 @@ zuul:
     web-githup:
       path: /baidu/**
       url: http://www.baidu.com
+welcome-service:
+  ribbon:
+    listOfServers: http://www.junyee.org:35001/
+turbine-hystrix:
+  ribbon:
+    listOfServers: http://www.junyee.org:34001/
