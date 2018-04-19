@@ -48,14 +48,14 @@ hystrix:
       enabled: true
 zuul:
   routes:
-    welcome-service:
+    api-welcome:
       path: /welcome/**
       serviceId: welcome-service
       stripPrefix: true
-    turbine-hystrix:
+    api-turbine:
       path: /turbine/**
       serviceId: turbine-hystrix
       stripPrefix: true
-    githup:
+    web-githup:
       path: /baidu/**
       url: http://www.baidu.com
