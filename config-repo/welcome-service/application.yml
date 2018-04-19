@@ -24,9 +24,9 @@ spring:
         base-url: http://www.junyee.org:9411/
         service:
           name: welcome-service
-        locator:
-          discovery:
-            enabled: true
+        # locator:
+        #   discovery:
+        #     enabled: true
         sender:
           type: web
 server:
