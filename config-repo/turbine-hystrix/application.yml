@@ -38,8 +38,8 @@ management:
     web:
       exposure:
         include: ["*"]
-applications: turbine-hystrix,welcome-service
+applications: turbine-hystrix,welcome-service,api-gateway
 turbine:
   aggregator:
-    clusterConfig: turbine-hystrix,welcome-service
+    clusterConfig: ${applications}
   appConfig: ${applications}
