@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @RestController
 @EnableCircuitBreaker
+
 public class WelcomeServiceApplication {
 
 

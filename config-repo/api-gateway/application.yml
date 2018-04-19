@@ -56,3 +56,6 @@ zuul:
       path: /turbine/**
       serviceId: turbine-hystrix
       stripPrefix: true
+ribbon:
+  eureka:
+    enabled: false 
