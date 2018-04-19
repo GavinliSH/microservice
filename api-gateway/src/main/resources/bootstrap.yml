@@ -5,3 +5,9 @@ spring:
     config:
       profile: dev
       uri: http://www.junyee.org:8888/
+api-welcome:
+  ribbon:
+    listOfServers: http://www.junyee.org:35001/
+api-turbine:
+  ribbon:
+    listOfServers: http://www.junyee.org:34001/
