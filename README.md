@@ -1,5 +1,5 @@
 # microservice
-* Focus on Spring Cloud base on Spring boot 2.0.
+* Focus on Spring Cloud Finchley.M9 base on Spring boot 2.0.
 * Provide docker maven project
 * Provide consul registration server
 * Provide zipkin trace tool, the zipkin's storage is mysql.
