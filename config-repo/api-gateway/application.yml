@@ -46,6 +46,9 @@ hystrix:
     maxConcurrentConnections: 20
     bus:
       enabled: true
+eureka:
+  client:
+    enabled: false
 zuul:
   ignored-services: "*"
   routes:
