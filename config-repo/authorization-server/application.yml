@@ -1,0 +1,46 @@
+
+# www.junyee.org is LAN hostname
+# In docker deamon , if you do not set public dns server, the consul will not find the docker generated hostname. For running success, the request all in LAN layer.
+# if you running in your env. please change the hostname to right.
+spring:
+    cloud:
+        consul:
+            host: www.junyee.org
+            port: 8500
+            discovery:
+# spring boot 2.0 don't provide "/health" in default, the spring-cloud-consul source code default set "/actuator/health"
+                health-check-url: http://www.junyee.org:36001/actuator/health
+                healthCheckInterval: 15s
+                instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+        bus:
+            trace:
+                enabled: true
+        rabbitmq:
+            host: www.junyee.org
+            port: 5672
+            username: guest
+            password: guest
+    zipkin:
+        base-url: http://www.junyee.org:9411/
+        service:
+          name: authorization-server
+        # locator:
+        #   discovery:
+        #     enabled: true
+        sender:
+          type: web
+server:
+    port: 36001
+management:
+  endpoint:
+    bus-refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
+hystrix:
+  stream:
+    maxConcurrentConnections: 20
+    bus:
+      enabled: true
