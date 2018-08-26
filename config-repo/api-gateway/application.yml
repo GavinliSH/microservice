@@ -76,7 +76,7 @@ security:
       user-authorization-uri: http://www.junyee.org:36001/oauth/authorize
       client-id: clientId1
       client-secret: secret1
-      registered-redirect-uri: http:///www.junyee.org:32001/login
+      registered-redirect-uri: ["http:///www.junyee.org:32001/login"]
     resource:
       user-info-uri: http://www.junyee.org:36001/user
       prefer-token-info: false
