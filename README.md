@@ -5,4 +5,4 @@
 * Provide zipkin trace tool, the zipkin's storage is mysql.
 * Provide real-time refresh configuration files base the rabbitmq.
 * Provide turbine hystrix
-* Provide Zuul API gateway
+* Provide OAuth2 & Zuul API gateway
